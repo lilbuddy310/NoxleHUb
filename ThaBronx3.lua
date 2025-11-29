@@ -1,2 +1,122 @@
--- Noxle Hub | Tha Bronx 3 -
-local _0xA1B2C3D4E5F6=loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))();local _0xF6E5D4C3B2A1=_0xA1B2C3D4E5F6:CreateWindow({Name="Noxle Hub Tha Bronx 3",LoadingTitle="Noxle Hub Loading...",LoadingSubtitle="Noxle Hub On Top",Theme="Amethyst",KeySystem=true,KeySettings={Title="Noxle Hub | Tha Bronx 3",Subtitle="Enter Key",Note="Join Discord to get key: https://discord.com/invite/9C93DhjK",SaveKey=false,Key="NoxleOnTop"}});local _0x7890ABCD=game:GetService("Players");local _0xEFGH1234=game:GetService("ReplicatedStorage");local _0x5678IJKL=game:GetService("Workspace");local _0xMNOP9=game:GetService("ProximityPromptService");local _0xQRST0=_0x7890ABCD.LocalPlayer;local function _0xUVWX1(_0xYZ2,_0xAB3,_0xCD4)if not _0xQRST0.Character or not _0xQRST0.Character:FindFirstChild("HumanoidRootPart")then return end;_0xQRST0.Character.HumanoidRootPart.CFrame=CFrame.new(_0xYZ2,_0xAB3,_0xCD4)end;local _0xEF5=_0xF6E5D4C3B2A1:CreateTab("Main");local _0xGH6=_0xF6E5D4C3B2A1:CreateTab("Local");_0xEF5:CreateButton({Name="Infinite Illegal Money",Callback=function()local _0xIJ7=_0xQRST0.Character.HumanoidRootPart.Position;_0xUVWX1(-48,287,-338)task.wait(1.5)local _0xKL8=_0x5678IJKL:FindFirstChild("IceFruit Sell")and _0x5678IJKL["IceFruit Sell"]:FindFirstChildWhichIsA("ProximityPrompt")if _0xKL8 then for i=1,2000 do fireproximityprompt(_0xKL8,0)end end;task.wait(0.8)_0xUVWX1(_0xIJ7.X,_0xIJ7.Y,_0xIJ7.Z)end});local _0xMN9=false;_0xEF5:CreateButton({Name="Duplicate Equipped Item",Callback=function()if _0xMN9 then return end _0xMN9=true;local _0xOP0=_0xQRST0.Character or _0xQRST0.CharacterAdded:Wait();local _0xQR1=_0xOP0:FindFirstChildOfClass("Tool")if not _0xQR1 then _0xMN9=false _0xF6E5D4C3B2A1:Notify({Title="Error",Content="Equip a tool!"})return end;_0xQR1.Parent=_0xQRST0.Backpack;task.wait(0.5)local _0xST2=_0xQR1.Name;local _0xUV3;local _0xWX4=_0xEFGH1234.MarketItems.ChildAdded:Connect(function(_0xYZ5)if _0xYZ5.Name==_0xST2 and _0xYZ5:FindFirstChild("owner")and _0xYZ5.owner.Value==_0xQRST0.Name then _0xUV3=_0xYZ5:GetAttribute("SpecialId")end end);_0xEFGH1234.ListWeaponRemote:FireServer(_0xST2,99999)task.wait(0.4);_0xEFGH1234.BackpackRemote:InvokeServer("Store",_0xST2)task.wait(3)if _0xUV3 then _0xEFGH1234.BuyItemRemote:FireServer(_0xST2,"Remove",_0xUV3)end;_0xEFGH1234.BackpackRemote:InvokeServer("Grab",_0xST2);_0xWX4:Disconnect();_0xMN9=false end});local _0xAB6={["Bank"]=Vector3.new(-204,284,-1223),["Ice Box"]=Vector3.new(-193,284,-1169),["Gunstore 1"]=Vector3.new(-1003,254,-817),["Gunstore 2"]=Vector3.new(-202,284,-798),["Gunstore 3 (Hood)"]=Vector3.new(72425,128856,1082),["Gunstore 4 (Hood)"]=Vector3.new(60822,87609,352),["Laundromat"]=Vector3.new(-990,254,-686),["Backpack Shop"]=Vector3.new(-670,254,-681),["Jamaican Food"]=Vector3.new(-670,254,-810),["Deli & Grill"]=Vector3.new(-746,254,-906),["Chicken & Wings"]=Vector3.new(964,254,-813),["McDonald's"]=Vector3.new(-999,254,-1134),["Dealership"]=Vector3.new(-389,253,-1232),["Old Penthouse"]=Vector3.new(-124,417,575),["New Penthouse"]=Vector3.new(-597,356,-714),["Penthouse Cook Pot"]=Vector3.new(-614,356,-683)};local _0xCD7="Bank";_0xEF5:CreateDropdown({Name="Teleport (16)",Options={"Bank","Ice Box","Gunstore 1","Gunstore 2","Gunstore 3 (Hood)","Gunstore 4 (Hood)","Laundromat","Backpack Shop","Jamaican Food","Deli & Grill","Chicken & Wings","McDonald's","Dealership","Old Penthouse","New Penthouse","Penthouse Cook Pot"},CurrentOption={"Bank"},Callback=function(_0xEF8)_0xCD7=_0xEF8[1]end});_0xEF5:CreateButton({Name="Teleport",Callback=function()local _0xGH9=_0xAB6[_0xCD7];_0xUVWX1(_0xGH9.X,_0xGH9.Y,_0xGH9.Z)end});local _0xIJ0;_0xGH6:CreateToggle({Name="Instant Interact",CurrentValue=false,Callback=function(_0xKL1)if _0xKL1 then for _,_0xMN2 in _0x5678IJKL:GetDescendants()do if _0xMN2:IsA("ProximityPrompt")then _0xMN2.HoldDuration=0 end end;_0xIJ0=_0xMNOP9.PromptButtonHoldBegan:Connect(function(_0xOP3)_0xOP3.HoldDuration=0 end)else if _0xIJ0 then _0xIJ0:Disconnect()end end end});_0xF6E5D4C3B2A1:Notify({Title="Noxle Hub",Content="Loaded Successfully • Key Accepted",Duration=8});
+-- Noxle Hub | Tha Bronx 3 - FIXED RAYFIELD (No 404 Errors)
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()  -- Working mirror 2025
+
+local Window = Rayfield:CreateWindow({
+    Name = "Noxle Hub Tha Bronx 3",
+    LoadingTitle = "Noxle Hub Loading...",
+    LoadingSubtitle = "Noxle Hub On Top",
+    Theme = "Amethyst",
+    KeySystem = true,
+    KeySettings = {
+        Title = "Noxle Hub | Tha Bronx 3",
+        Subtitle = "Enter Key",
+        Note = "Join Discord to get key: https://discord.com/invite/9C93DhjK",
+        SaveKey = false,
+        Key = "NoxleOnTop"
+    }
+})
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+local ProximityPromptService = game:GetService("ProximityPromptService")
+local Player = Players.LocalPlayer
+
+-- Safe Teleport
+local function TP(x, y, z)
+    if not Player.Character or not Player.Character:FindFirstChild("HumanoidRootPart") then return end
+    Player.Character.HumanoidRootPart.CFrame = CFrame.new(x, y, z)
+end
+
+local Main = Window:CreateTab("Main")
+local Local = Window:CreateTab("Local")
+
+-- Infinite Illegal Money
+Main:CreateButton({
+    Name = "Infinite Illegal Money",
+    Callback = function()
+        local oldPos = Player.Character.HumanoidRootPart.Position
+        TP(-48, 287, -338)
+        task.wait(1.5)
+        local prompt = Workspace:FindFirstChild("IceFruit Sell") and Workspace["IceFruit Sell"]:FindFirstChildWhichIsA("ProximityPrompt")
+        if prompt then
+            for i = 1, 2000 do
+                fireproximityprompt(prompt, 0)
+            end
+        end
+        task.wait(0.8)
+        TP(oldPos.X, oldPos.Y, oldPos.Z)
+    end
+})
+
+-- Item Duplication
+local duping = false
+Main:CreateButton({
+    Name = "Duplicate Equipped Item",
+    Callback = function()
+        if duping then return end
+        duping = true
+        local char = Player.Character or Player.CharacterAdded:Wait()
+        local tool = char:FindFirstChildOfClass("Tool")
+        if not tool then
+            duping = false
+            Rayfield:Notify({Title = "Error", Content = "Equip a tool!"})
+            return
+        end
+        tool.Parent = Player.Backpack
+        task.wait(0.5)
+        local name = tool.Name
+        local id
+        local conn = ReplicatedStorage.MarketItems.ChildAdded:Connect(function(i)
+            if i.Name == name and i:FindFirstChild("owner") and i.owner.Value == Player.Name then
+                id = i:GetAttribute("SpecialId")
+            end
+        end)
+        ReplicatedStorage.ListWeaponRemote:FireServer(name, 99999)
+        task.wait(0.4)
+        ReplicatedStorage.BackpackRemote:InvokeServer("Store", name)
+        task.wait(3)
+        if id then ReplicatedStorage.BuyItemRemote:FireServer(name, "Remove", id) end
+        ReplicatedStorage.BackpackRemote:InvokeServer("Grab", name)
+        conn:Disconnect()
+        duping = false
+    end
+})
+
+-- 16 TPs
+local locs = {
+    ["Bank"] = Vector3.new(-204, 284, -1223), ["Ice Box"] = Vector3.new(-193, 284, -1169),
+    ["Gunstore 1"] = Vector3.new(-1003, 254, -817), ["Gunstore 2"] = Vector3.new(-202, 284, -798),
+    ["Gunstore 3 (Hood)"] = Vector3.new(72425, 128856, 1082), ["Gunstore 4 (Hood)"] = Vector3.new(60822, 87609, 352),
+    ["Laundromat"] = Vector3.new(-990, 254, -686), ["Backpack Shop"] = Vector3.new(-670, 254, -681),
+    ["Jamaican Food"] = Vector3.new(-670, 254, -810), ["Deli & Grill"] = Vector3.new(-746, 254, -906),
+    ["Chicken & Wings"] = Vector3.new(964, 254, -813), ["McDonald's"] = Vector3.new(-999, 254, -1134),
+    ["Dealership"] = Vector3.new(-389, 253, -1232), ["Old Penthouse"] = Vector3.new(-124, 417, 575),
+    ["New Penthouse"] = Vector3.new(-597, 356, -714), ["Penthouse Cook Pot"] = Vector3.new(-614, 356, -683)
+}
+local sel = "Bank"
+Main:CreateDropdown({
+    Name = "Teleport (16)",
+    Options = {"Bank", "Ice Box", "Gunstore 1", "Gunstore 2", "Gunstore 3 (Hood)", "Gunstore 4 (Hood)", "Laundromat", "Backpack Shop", "Jamaican Food", "Deli & Grill", "Chicken & Wings", "McDonald's", "Dealership", "Old Penthouse", "New Penthouse", "Penthouse Cook Pot"},
+    CurrentOption = {"Bank"},
+    Callback = function(v) sel = v[1] end
+})
+Main:CreateButton({
+    Name = "Teleport",
+    Callback = function() TP(locs[sel].X, locs[sel].Y, locs[sel].Z) end
+})
+
+-- Instant Interact
+local pc
+Local:CreateToggle({
+    Name = "Instant Interact",
+    CurrentValue = false,
+    Callback = function(v)
+        if v then
+            for _, p in Workspace:GetDescendants() do if p:IsA("ProximityPrompt") then p.HoldDuration = 0 end end
+            pc = ProximityPromptService.PromptButtonHoldBegan:Connect(function(p) p.HoldDuration = 0 end)
+        else if pc then pc:Disconnect() end end
+    end
+})
+
+Rayfield:Notify({Title = "Noxle Hub", Content = "Loaded Successfully • Key Accepted", Duration = 8})
